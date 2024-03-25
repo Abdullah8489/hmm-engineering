@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const registerRoutes = require("./routes/registerRoutes");
+const contactUsFormRoutes = require("./routes/contactUsFormRoutes");
 
 
 const cors = require("cors");
@@ -25,5 +26,7 @@ console.log("inside app.js");
 // });
 app.use("/api/register", registerRoutes);
 app.use("/api", registerRoutes);
+app.use("/api/contactForm", contactUsFormRoutes);
+
 
 module.exports = app;
