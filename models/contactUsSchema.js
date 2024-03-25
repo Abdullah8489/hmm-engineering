@@ -26,6 +26,10 @@ const contactUsSchema = new mongoose.Schema({
         type:String,
         required: true,
         lowercase: true,
+    },
+    isRead: { 
+        type: Boolean, 
+        default: false 
     }
 })
 module.exports = mongoose.model("ContactUs", contactUsSchema);
