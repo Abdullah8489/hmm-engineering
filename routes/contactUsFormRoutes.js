@@ -14,7 +14,7 @@ router
 
 router
     .route("/updateFlag")
-    .update(contactUsFormController.updateIsReadFlag)
+    .put(contactUsFormController.updateIsReadFlag)
 
 router
     .route("/delContactUsRecord")
